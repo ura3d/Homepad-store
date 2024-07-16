@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepad</title>
+        <meta name="description" lang="ru" content="Консоли на дом">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+      <div id="logo" class="logo _ps">
+        <h1>Homepad store</h1>
+      </div>
+
+        <div>
+
+          <div class="product">
+            <div class="center-blocks">
+
+              <div id="ps-h" class="ps-h pr">
+                <div class="img"></div>
+                <h4>PlayStation</h4>
+              </div>
+
+              <div id="xbox-h" class="xbox-h pr">
+                <div class="img"></div>
+                <h4>Xbox</h4>
+              </div>
+
+            <!--  <div id="nintendo-h" class="nintendo-h pr">
+                <div class="img"></div>
+                <h4>Nintendo</h4>
+              </div>
+            -->
+            </div>
+          </div>
+
+        </div>
+
+      <div class="welkomepage"></div>
+
+      <div class="pspage" id="pspage" style = "background-color: black;">
+              <video  width="100%" height="100%" class="psvideo" id="psvideo" loop autoplay muted>
+              </video>
+              <div class="pspagecover" id="pspagecover">
+                <div class="ps-block">
+
+                    <div onmouseover="hoverOnPs5()" onmouseout="hoverOffPs5()" class="ps5-block anim" id="ps5-block">
+                        <div class="ps5-img"></div>
+                        <div class="ps5-textblock">
+                            <div class="ps5-logo"></div>
+                            <div class="ps5-price">5.99 Euro - 48h</div>
+                            <div class="ps5-buybutton">
+                                <b class="ps5-buytext">Order now</b>
+                            </div>
+                        </div>
+                    </div>
+
+                  <div class= little-blocks>
+                    <div onmouseover="hoverOnPs4()" onmouseout="hoverOffPs4()" class="ps4-block anim" id="ps4-block">
+                        <div class="ps4-img"></div>
+                        <div class="ps4-textblock">
+                            <div class="ps4-logo"></div>
+                            <div class="ps4-price">2.99 Euro - 48h</div>
+                            <div class="ps4-buybutton">
+                                <b class="ps4-buytext">Order now</b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div onmouseover="hoverOnPs3()" onmouseleave="hoverOffPs3()"class="ps3-block anim" id="ps3-block">
+                        <div class="ps3-img"></div>
+                        <div class="ps3-textblock">
+                            <div class="ps3-logo"></div>
+                            <div class="ps3-price">1.99 Euro - 48h</div>
+                            <div class="ps3-buybutton">
+                                <b class="ps3-buytext">Order now</b>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+              </div>
+              <div class="ps-byte anim"></div>
+            </div>
+      </div>
+
+      <div class="xboxpage" id="xboxpage">
+        <div class="xboxpagecover" id="xboxpagecover">
+          <div class="xbox-block">
+
+            <div onmouseover="hoverOnXboxSX()" onmouseout="hoverOffXboxSX()" class="xbox-sx-block anim" id="xbox-sx">
+              <div class="xbox-sx-img"></div>
+              <div class="xbox-sx-textblock">
+                  <div class="xbox-sx-logo"></div>
+                  <div class="xbox-sx-price">4.99 Euro - 48h</div>
+                  <div class="xbox-sx-buybutton">
+                      <b class="xbox-sx-buytext">Order now</b>
+                  </div>
+              </div>
+            </div>
+
+            <div onmouseover="hoverOnXboxSS()" onmouseout="hoverOffXboxSS()" class="xbox-ss-block anim" id="xbox-ss">
+              <div class="xbox-ss-img"></div>
+              <div class="xbox-ss-textblock">
+                  <div class="xbox-ss-logo"></div>
+                  <div class="xbox-ss-price">3.99 Euro - 48h</div>
+                  <div class="xbox-ss-buybutton">
+                      <b class="xbox-ss-buytext">Order now</b>
+                  </div>
+              </div>
+            </div>
+
+            <div class= little-blocks>
+
+              <div onmouseover="hoverOnXboxOne()" onmouseout="hoverOffXboxOne()" class="xbox-one-block anim" id="xbox-one">
+                  <div class="xbox-one-img"></div>
+                  <div class="xbox-one-textblock">
+                      <div class="xbox-one-logo"></div>
+                      <div class="xbox-one-price">2.49 Euro - 48h</div>
+                      <div class="xbox-one-buybutton">
+                          <b class="xbox-one-buytext">Order now</b>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div onmouseover="hoverOnXbox360()" onmouseout="hoverOffXbox360()" class="xbox-360-block anim" id="xbox-360">
+                  <div class="xbox-360-img"></div>
+                  <div class="xbox-360-textblock">
+                      <div class="xbox-360-logo"></div>
+                      <div class="xbox-360-price">0.99 Euro - 48h</div>
+                      <div class="xbox-360-buybutton">
+                          <b class="xbox-360-buytext">Order now</b>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="xbox-byte anim"></div>
+      </div>
+
+    </body>
+    <script src="script.js"></script>

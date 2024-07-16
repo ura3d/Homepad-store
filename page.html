@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepad</title>
+        <meta name="description" lang="ru" content="Консоли на дом">
+        <link rel="stylesheet" type="text/css" href="stylepage.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body style="background-color: black">
+
+      <div>
+
+        <div id="product" class="product">
+          <div class="center-blocks">
+
+            <div class="console-h pr">
+              <div style="background-image: url(resources/img/ps5-page/fat-img.png)" id="console_img" class="img"></div>
+              <h4 id="console_text">PlayStation 5 Fat</h4>
+            </div>
+
+            <div class="time-h pr">
+              <div class="img"><h4 id="time_text1" class="color: white">2 days</h4></div>
+              <h4 id="time_text2">2 days</h4>
+            </div>
+
+            <div class="gamepads-h pr">
+              <div style="background-image: url(resources/img/ps5-page/gamepad-ico.png)" id="gamepad_photo" class="img"></div>
+              <h4 id="gamepad_text">1 controller</h4>
+            </div>
+
+            <div id="acces"></div>
+
+            <div id="game_count"class="">
+            </div>
+
+            <div class="price-h pr">
+              <div class=""><h2>Total price</h2></div>
+              <h2 style="color: rgba(0,91,255,1)" id="total_price-h"></h2>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="page-photo-center">
+      <img src="resources/img/ps5-page/console-photo.jpg" class="page-photo">
+      </div>
+      <div class="page-gradient"></div>
+
+      <div class="page-text-block">
+
+        <h1 style="margin-bottom: 150px;">
+          <p class="page-h1">Introducing the future of gaming</p>
+          <p class="page-h1">The <span  style="color: rgba(0,91,255,1)">PlayStation 5!</span></p>
+        </h1>
+          <div class="page-block">
+            <div class="page-text">
+              <p>With lightning-fast load times, stunning graphics, and incredible performance, the PS5 is the ultimate gaming machine for gamers everywhere.</p>
+              <p>Experience breathtaking worlds and immersive gameplay like never before with the PS5's cutting-edge features. The new DualSense controller brings games to life with haptic feedback and adaptive triggers, making every sensation feel real. With 3D audio and ultra-high-speed SSD, you'll feel like you're right in the heart of the action.</p>
+              <p>The PS5 also has an extensive library of games, with a mix of exclusive titles and classic favorites. From adrenaline-pumping shooters to heartwarming adventures, there's something for every kind of gamer on the PS5.</p>
+              <p>And with the PlayStation Plus subscription service, you can enjoy online multiplayer, exclusive discounts, and free games every month, making the PS5 a fantastic value for avid gamers.</p>
+              <p>Get ready to step into the next generation of gaming with the PlayStation 5. Order now and experience the ultimate gaming experience today!</p>
+            </div>
+          </div>
+
+
+        <div class="grid">
+
+          <h1 class="choose-blocks">Choose console:</h1>
+
+          <div class="consoles">
+            <div id="fat" onclick="changeConsole(id)" class="fat-block _active">
+                <div style="background-image: url(resources/img/ps5-page/fat-img.png)" class="fat-img"></div>
+                <div class="fat-textblock">
+                    <div class="fat-name">PlayStation 5 Fat</div>
+                    <div class="fat-description">Simple console</div>
+                    <div class="fat-price"><span class="price">5.99</span><span>€</span></div>
+                </div>
+            </div>
+
+            <div id="slim" onclick="changeConsole(id)" class="fat-block">
+                <div style="background-image: url(resources/img/ps5-page/fat-img.png)" class="fat-img"></div>
+                <div class="fat-textblock">
+                    <div class="fat-name">PlayStation 5 Slim</div>
+                    <div class="fat-description">Little smaller</div>
+                    <div class="fat-price"><span class="price">6.99</span><span>€</span></div>
+                </div>
+            </div>
+
+            <div id="pro" onclick="changeConsole(id)" class="fat-block" class="fat-block">
+                <div style="background-image: url(resources/img/ps5-page/fat-img.png)" class="fat-img"></div>
+                <div class="fat-textblock">
+                    <div class="fat-name">PlayStation 5 Pro</div>
+                    <div class="fat-description">Most povered</div>
+                    <div class="fat-price"><span class="price">7.99</span><span>€</span></div>
+                </div>
+            </div>
+          </div>
+
+          <h1 class="choose-blocks">Choose time:</h1>
+
+          <div class="time">
+            <div id="t1" class="time_block _active" onclick="changeTime(id)"><p class="t_text">2 days</p><p><span class="price">5</span><span>.99€</span></p></div>
+            <div id="t2" class="time_block" onclick="changeTime(id)"><p class="t_text">5 days</p><p><span class="price">10</span><span>.99€</span></p></div>
+            <div id="t3" class="time_block" onclick="changeTime(id)"><p class="t_text">10 days</p><p><span class="price">20</span><span>.99€</span></p></div>
+            <div id="t4" class="time_block" onclick="changeTime(id)"><p class="t_text">20 days</p><p><span class="price">40</span><span>.99€</span></p></div>
+            <div id="t5" class="time_block" onclick="changeTime(id)"><p class="t_text">30 days</p><p><span class="price">60</span><span>.99€</span></p></div>
+
+          </div>
+
+          <h1 class="choose-blocks">Choose controllers:</h1>
+
+          <div class="gamepads">
+            <div style="background-image: url(resources/img/ps5-page/gamepad-ico.png);"  id="one_pad" onclick="changeGamepad(id)" class="one ps _active"><div class="btn"><div><span>+ </span><span class="pad_text">1 controller</span></div><h3><span class="price">0</span><span>€</span></h3></div></div>
+            <div style="background-image: url(resources/img/ps5-page/gamepad2-ico.png);"  id="two_pad" onclick="changeGamepad(id)" class="two ps"><div class="btn"><div><span>+ </span><span class="pad_text">2 controller</span></div><h3><span class="price">1.50</span><span>€</span></h3></div></div>
+            <div style="background-image: url(resources/img/ps5-page/gamepad3-ico.png);"  id="three_pad" onclick="changeGamepad(id)" class="three ps"><div class="btn"><div><span>+ </span><span class="pad_text">3 controller</span></div><h3><span class="price">2.50</span><span>€</span></h3></div></div>
+            <div style="background-image: url(resources/img/ps5-page/gamepad4-ico.png);"  id="four_pad" onclick="changeGamepad(id)" class="four ps"><div class="btn"><div><span>+ </span><span class="pad_text">4 controller</span></div><h3><span class="price">3</span><span>€</span></h3></div></div>
+          </div>
+
+          <h1 class="choose-blocks">Choose accessories:</h1>
+
+          <div class="acces">
+            <div style="background-image: url(resources/img/ps5-page/psvr-photo.jpg);" id="a1" onclick="changeAcces(id)" class="big-block ps"><div class="btn"><h3><span>+ </span><span class="a_t">PlayStation VR</span></h3><h2><span class="price">10</span><span>€</span></h2></div></div>
+            <div style="background-image: url(resources/img/ps5-page/wheel-photo.jpg);" id="a2" onclick="changeAcces(id)" class="big-block ps"><div class="btn"><h3><span>+ </span><span class="a_t">Logitech G27</span></h3><h2><span class="price">10</span><span>€</span></h2></div></div>
+            <div style="background-image: url(resources/img/ps5-page/acces-photo.jpg);" id="a3" onclick="changeAcces(id)" class="big-block ps"><div class="btn"><h3><span>+ </span><span class="a_t">PlayStation VR / Logitech G27</span></h3><h2><span class="price">18</span><span>€</span></h2></div></div>
+          </div>
+
+          <h1 class="choose-blocks">Choose games:</h1>
+
+          <div id="games" class="games">
+            <div style="background-image: url(resources/img/ps5-page/games/lust-of-us.jpg)" id="g1" onclick="changeGame(id)" class="game-block"><div></div></div>
+            <div style="background-image: url(resources/img/ps5-page/games/hogwarts-legasy.jpg)" id="g2" onclick="changeGame(id)" class="game-block"><div></div></div>
+            <div style="background-image: url(resources/img/ps5-page/games/far-cry-6.jpg)" id="g3" onclick="changeGame(id)" class="game-block"><div></div></div>
+            <div style="background-image: url(resources/img/ps5-page/games/gran-turismo-7.jpg)" id="g4" onclick="changeGame(id)" class="game-block"><div></div></div>
+            <div style="background-image: url(resources/img/ps5-page/games/nfs-unbound.jpg)" id="g5" onclick="changeGame(id)" class="game-block"><div></div></div>
+            <div style="background-image: url(resources/img/ps5-page/games/resident-evil-4.jpg)" id="g6" onclick="changeGame(id)" class="game-block"><div></div></div>
+            <div style="background-image: url(resources/img/ps5-page/games/spider-man-males-morales.jpg)" id="g7" onclick="changeGame(id)" class="game-block"><div></div></div>
+            <div style="background-image: url(resources/img/ps5-page/games/stray.jpg)" id="g8" onclick="changeGame(id)" class="game-block"><div></div></div>
+            <div style="background-image: url(resources/img/ps5-page/games/wreckfest.jpg)" id="g9" onclick="changeGame(id)" class="game-block"><div></div></div>
+            <div style="background-image: url(resources/img/ps5-page/games/wwe-2k23.jpg)" id="g10" onclick="changeGame(id)" class="game-block"><div></div></div>
+          </div>
+
+          <h1 class="choose-blocks">Information for deliver:</h1>
+
+
+          <div class="select-block">
+
+            <div class="select-input">
+              <h2 style="color: rgba(0,91,255,1)" class="choose-blocks contacts">City:</h2>
+              <select class="select">
+                <option value="graz" class="option">Graz</option>
+                <option value="wien" class="option">Wien</option>
+              </select>
+            </div>
+
+            <div class="select-input">
+              <h2 style="color: rgba(0,91,255,1)" class="choose-blocks contacts">Adress:</h2>
+              <input type="text" name="" value="" class="select">
+            </div>
+
+            <div class="select-input">
+              <h2 style="color: rgba(0,91,255,1)" class="choose-blocks contacts">Phone:</h2>
+              <input type="text" name="" value="" class="select">
+            </div>
+
+          <div class="select-input">
+            <h2 style="color: rgba(0,91,255,1)" class="choose-blocks contacts">Name:</h2>
+            <input type="text" name="" value="" class="select">
+          </div>
+
+          </div>
+
+          <h1 class="total-price"><span>Total Price: </span><span id="total-price"></span></h1>
+
+          <div class="page-order-button ps">Order Now</div>
+
+        </div>
+
+        <div class="foot"></div>
+
+      </div>
+    </body>
+<script src="scriptpage.js"></script>

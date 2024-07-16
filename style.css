@@ -1,0 +1,635 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.none{
+  display: none;
+}
+
+.logo{
+    display: block;
+    position: fixed;
+    left: 35vw;
+    right: 35vw;
+
+    border-top: 0px;
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.logo._ps{
+  z-index: 2;
+  color: white;
+  background: linear-gradient(138deg, rgba(199,0,195,0.5) 0%, rgba(121,35,218,0.5) 52%, rgba(0,91,255,0.5) 100%);
+}
+.logo._xbox{
+  z-index: 2;
+  color: white;
+  background-color: rgba(43,209,0,0.5);
+}
+
+.product{
+  color: white;
+  display: grid;
+  position: fixed;
+  height: 100%;
+  width: 150px;
+  margin-left: 1%;
+  z-index: 3;
+  transition: 2s;
+}
+
+.center-blocks{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.pr{
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  transition: 0.7s;
+}
+.pr._opa{
+  opacity: 0.3;
+}
+
+.img{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 35px;
+}
+
+.ps-h .img{
+  background-Image: url(resources/img/logo/ps-logo.png);
+  background-color: blue;
+}
+.ps-h{
+  color: blue;
+}
+.xbox-h .img{
+  background-Image: url(resources/img/logo/xbox-logo.png);
+  background-color: green;
+  background-size: 45px;
+}
+.xbox-h{
+  color: green;
+}
+.nintendo-h .img{
+  background-Image: url(resources/img/logo/nintendo-logo.png);
+  background-color: red;
+}
+.nintendo-h{
+  color: red;
+}
+
+.pr h4{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.welkomepage, .pspage, .xboxpage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.welkome-byte, .ps-byte, .xbox-byte{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 70px;
+}
+
+.welkomepage{
+    width: 0%;
+    height: 0vh;
+    background-color: white;
+}
+
+.pspagecover{
+  background-color: black;
+  transition: all 3s ease 0s;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.pspagecover._hide{
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.pspage{
+  background-color: black;
+  background-size: cover;
+  transition: 3s;
+}
+.pspage._ps5{
+  background-image: url(resources/img/trailers/ps5-trailer-s.gif);
+}
+.pspage._ps4{
+  background-image: url(resources/img/trailers/ps4-trailer.gif);
+}
+
+.psvideo{
+  object-fit: cover;
+  position: absolute;
+}
+
+.xboxpage{
+  background-color: white;
+}
+
+
+
+.ps-block, .xbox-block{
+  padding-top: 20vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/*
+PLAYSTATION 5 AND XBOX SERIES X BLOCKS SETTINGS
+PLAYSTATION 5 AND XBOX SERIES X BLOCKS SETTINGS
+PLAYSTATION 5 AND XBOX SERIES X BLOCKS SETTINGS
+*/
+
+.ps5-block, .xbox-sx-block, .xbox-ss-block{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 21px;
+}
+
+.ps5-img, .xbox-sx-img, .xbox-ss-img{
+  height: 30vh;
+  width: 40vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ps5-logo, .xbox-sx-logo, .xbox-ss-logo{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 15px 0px;
+  height: 8vh;
+  width: 100%;
+}
+
+.ps5-price, .xbox-sx-price, .xbox-ss-price{
+  font-size: 3vh;
+  text-align: center;
+}
+
+.ps5-buybutton, .xbox-sx-buybutton, .xbox-ss-buybutton{
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  margin-left: 23%;
+  margin-right: 23%;
+  margin-top: 10px;
+}
+
+.ps5-buytext, .xbox-sx-buytext, .xbox-ss-buytext{
+  padding-top: 13px;
+  font-size: 2.5vh;
+}
+
+.ps5-textblock, .xbox-sx-textblock, .xbox-ss-textblock{
+  height: 36%;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  border-radius: 0px 0px 21px 21px;
+}
+
+
+/*
+PLAYSTATION 5 SETTINGS
+PLAYSTATION 5 SETTINGS
+PLAYSTATION 5 SETTINGS
+*/
+
+.ps5-block{
+  box-shadow: 0px 0px 30px 5px blue;
+  background-color: white;
+  transform: translate(-50%, 0px);
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+.ps5-block._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.ps5-block:hover{
+  box-shadow: 0px 0px 0px 0px blue;
+}
+.ps5-block._opa{
+  opacity: 0.5;
+}
+
+.ps5-img{
+  background-image: url(resources/img/consoles/ps5-img.png);
+}
+
+.ps5-textblock{
+  background-color: silver;
+}
+
+.ps5-logo{
+  background-image: url(resources/img/logo/ps5-logo.png);
+}
+
+.ps5-price{
+  color: black;
+}
+
+.ps5-buybutton{
+  background-color: blue;
+  color: white;
+  transition: all 0.3s;
+}
+.ps5-buybutton:hover{
+  background-color: white;
+  color: blue;
+  box-shadow: 0px 0px 15px 2px white;
+}
+
+/*
+PLAYSTATION 4/PLAYSTATION 3/XBOX ONE/XBOX 360 BLOCKS SETTINGS
+PLAYSTATION 4/PLAYSTATION 3/XBOX ONE/XBOX 360 BLOCKS SETTINGS
+PLAYSTATION 4/PLAYSTATION 3/XBOX ONE/XBOX 360 BLOCKS SETTINGS
+*/
+
+.ps4-block, .ps3-block, .xbox-one-block, .xbox-360-block{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%;
+  height: fit-content;
+  width: 40vh;
+  border-radius: 21px;
+}
+
+.ps4-textblock, .ps3-textblock, .xbox-one-textblock, .xbox-360-textblock{
+  display: table-caption;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.ps4-img, .ps3-img, .xbox-one-img, .xbox-360-img{
+  height: 15vh;
+  width: 16vh;
+  margin: 5.5vh 1vh 0px 0px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: right;
+}
+
+.ps4-logo, .ps3-logo, .xbox-one-logo, .xbox-360-logo{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 4vh 0.5vh 0px 1vh;
+  height: 8vh;
+  width: 20vh;
+  float: left;
+}
+
+.ps4-price, .ps3-price, .xbox-one-price, .xbox-360-price{
+  margin: 0px 0px 0px 3.5vh;
+  font-size: 2vh;
+  text-align: center;
+  float: left;
+}
+
+.ps4-buybutton, .ps3-buybutton, .xbox-one-buybutton, .xbox-360-buybutton{
+  border: solid white 3px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 10px 0vh 4vh 4vh;
+  padding: 6px 12px 10px 12px;
+  float: left;
+}
+
+.ps4-buytext, .ps3-buytext, .xbox-one-buytext, .xbox-360-buytext{
+  font-size: 2vh;
+  float: left;
+}
+
+/*
+PLAYSTATION 4 Settings
+PLAYSTATION 4 Settings
+PLAYSTATION 4 Settings
+*/
+
+.ps4-block{
+  background-color: blue;
+  transform: translate(50%, 0px);
+  opacity: 0;
+  transition: all 0.5s ease 0.1s;
+}
+.ps4-block._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.ps4-block._opa{
+  opacity: 0.3;
+}
+
+.ps4-textblock{
+  background-color: darkblue;
+}
+
+.ps4-img{
+  background-image: url(resources/img/consoles/ps4-img.png);
+}
+
+.ps4-logo{
+  background-image: url(resources/img/logo/ps4-logo.png);
+}
+
+.ps4-price{
+  color: white;
+}
+
+.ps4-buybutton{
+  background-color: darkblue;
+  color: white;
+  transition: all 0.5s;
+}
+.ps4-buybutton:hover{
+  background-color: white;
+  color: darkblue;
+  box-shadow: 0px 0px 10px 2px white;
+}
+
+/*
+PLAYSTATION 3 Settings
+PLAYSTATION 3 Settings
+PLAYSTATION 3 Settings
+*/
+
+.ps3-block{
+  background-color: #6e6e6e;
+
+  transform: translate(50%, 0px);
+  opacity: 0;
+  transition: all 0.5s ease 0.2s;
+}
+.ps3-block._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.ps3-block._opa{
+  opacity: 0.5;
+}
+
+.ps3-textblock{
+  background-color: #3f3e3e;
+}
+
+.ps3-img{
+  background-image: url(resources/img/consoles/ps3-img.png);
+}
+
+.ps3-logo{
+  background-image: url(resources/img/logo/ps3-logo.png);
+}
+
+.ps3-price{
+  color: white;
+}
+
+.ps3-buybutton{
+  background-color: #3f3e3e;
+  color: white;
+  transition: all 0.5s;
+}
+.ps3-buybutton:hover{
+  background-color: white;
+  color: #3f3e3e;
+  box-shadow: 0px 0px 10px 2px white;
+}
+
+.ps3_wallp{
+  background-color: transparent;
+  background-size: cover;
+  transition: all 3s;
+}
+
+/*
+XBOX SERIES X SETTINGS
+XBOX SERIES X SETTINGS
+XBOX SERIES X SETTINGS
+*/
+
+.xbox-sx-block{
+  background-color: lightgrey;
+  transform: translate(-50%, 0px);
+  opacity: 0;
+  transition: all 0.5s ease 0.2s;
+}
+.xbox-sx-block._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.xbox-sx-block._opa{
+  opacity: 0.3;
+}
+
+.xbox-sx-img{
+  background-image: url(resources/img/consoles/xbox-sx-img.png);
+}
+
+.xbox-sx-textblock{
+  background-color: black;
+}
+
+.xbox-sx-logo{
+  background-image: url(resources/img/logo/xbox-sx-logo-w.png);
+}
+
+.xbox-sx-price{
+  color: white;
+}
+
+.xbox-sx-buybutton{
+  background-color: white;
+  color: black;
+  transition: all 0.5s;
+}
+.xbox-sx-buybutton:hover{
+  box-shadow: 0px 0px 10px 2px white;
+  background-color: black;
+  color: white;
+}
+
+
+/*
+XBOX SERIES S SETTINGS
+XBOX SERIES S SETTINGS
+XBOX SERIES S SETTINGS
+*/
+
+.xbox-ss-block{
+  background-color: darkgrey;
+  box-shadow: 0px 0px 30px 1px green;
+  transform: translate(0px, 30%);
+  opacity: 0;
+  transition: all 0.5s ease 0.2s;
+}
+.xbox-ss-block:hover{
+  box-shadow: 0px 0px 0px 0px green;
+}
+.xbox-ss-block._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.xbox-ss-block._opa{
+  opacity: 0.3;
+}
+
+.xbox-ss-img{
+  background-image: url(resources/img/consoles/xbox-ss-img.png);
+}
+
+.xbox-ss-textblock{
+  background-color: white;
+}
+
+.xbox-ss-logo{
+  background-image: url(resources/img/logo/xbox-ss-logo.png);
+}
+
+.xbox-ss-price{
+  color: black;
+}
+
+.xbox-ss-buybutton{
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+.xbox-ss-buybutton:hover{
+  box-shadow: 0px 0px 10px 2px black;
+  background-color: white;
+  color: black;
+}
+
+
+/*
+XBOX ONE SETTINGS
+XBOX ONE SETTINGS
+XBOX ONE SETTINGS
+*/
+
+.xbox-one-block{
+  background-color: lightgreen;
+  transform: translate(50%, 0%);
+  opacity: 0;
+  transition: all 0.5s ease 0.1s;
+}
+.xbox-one-block._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.xbox-one-block._opa{
+  opacity: 0.3;
+}
+
+.xbox-one-img{
+  background-image: url(resources/img/consoles/xbox-one-img.png);
+}
+
+.xbox-one-textblock{
+  background-color: green;
+}
+
+.xbox-one-logo{
+  background-image: url(resources/img/logo/xbox-one-logo-w.png);
+}
+
+.xbox-one-price{
+  color: white;
+}
+
+.xbox-one-buybutton{
+  transition: 0.5s;
+  color: white;
+}
+.xbox-one-buybutton:hover{
+  box-shadow: 0px 0px 10px 2px white;
+  background-color: white;
+  color: green;
+}
+
+/*
+XBOX 360 SETTINGS
+XBOX 360 SETTINGS
+XBOX 360 SETTINGS
+*/
+
+.xbox-360-block{
+  background-color: lightgrey;
+  transform: translate(50%, 0%);
+  opacity: 0;
+  transition: all 0.5s ease 0.2s;
+}
+.xbox-360-block._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.xbox-360-block._opa{
+  opacity: 0.3;
+}
+
+.xbox-360-img{
+  background-image: url(resources/img/consoles/xbox-360-img.png);
+}
+
+.xbox-360-textblock{
+  background-color: green;
+}
+
+.xbox-360-logo{
+  background-image: url(resources/img/logo/xbox-360-logo.png);
+}
+
+.xbox-360-price{
+  color: white;
+}
+
+.xbox-360-buybutton{
+  transition: all 0.5s;
+  color: white;
+}
+.xbox-360-buybutton:hover{
+  box-shadow: 0px 0px 10px 2px white;
+  background-color: white;
+  color: green;
+}
+
+
+
+
+/*
+CONSOLE PAGE
+CONSOLE PAGE
+CONSOLE PAGE
+CONSOLE PAGE
+CONSOLE PAGE
+CONSOLE PAGE
+*/
